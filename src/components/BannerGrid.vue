@@ -5,17 +5,17 @@
             <h2 class="capitalize text-orange-soft font-bold text-[4rem] leading-[4rem] mb-[3.4rem]">
                 new
             </h2>
-            <h3 class="font-extrabold text-[2rem] text-white-off">Hydrogen VS Electric Cars</h3>
+            <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">Hydrogen VS Electric Cars</h3>
             <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
                 Will hydrogen-fueled cars ever catch up to EVs?
             </h4>
             <span class="block h-[1px] my-12 bg-blue-grayishdark"></span>
-            <h3 class="font-extrabold text-[2rem] text-white-off">The Downsides of AI Artistry</h3>
+            <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">The Downsides of AI Artistry</h3>
             <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
                 What are the possible adverse effects of on-demand AI image generation?
             </h4>
             <span class="block h-[1px] my-12 bg-blue-grayishdark"></span>
-            <h3 class="font-extrabold text-[2rem] text-white-off">Is VC Funding Drying Up?</h3>
+            <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">Is VC Funding Drying Up?</h3>
             <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
                 Private funding by VC firms is down 50% YOY. We take a look at what that means.
             </h4>
@@ -26,7 +26,7 @@
                 We dive into the next evolution of the web that claims to put the power of the platforms back 
                 into the hands of the people. But is it really fulfilling its promise?
             </p>
-            <button class="font-bold bg-red-soft uppercase w-[18.5rem] h-[4.8rem] text-white-off text-2xl tracking-[4.38px]">
+            <button class="font-bold bg-red-soft uppercase w-[18.5rem] h-[4.8rem] text-white-off hover:text-blue-vdark text-2xl tracking-[4.38px]">
                 Read more
             </button>
         </div>  
