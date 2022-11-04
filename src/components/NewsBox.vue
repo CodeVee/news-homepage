@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-[2.4rem]">
-    <img class=" w-40 h-[12.7rem]" :src="img" alt="retro" />
+    <slot name="img"></slot>
     <div>
       <h5 class="text-[3.2rem] leading-[3.2rem] font-bold text-blue-grayish">
         0<slot name="id"></slot>
@@ -17,9 +17,6 @@
 
 <script lang="ts">
 export default {
-  name: "NewsBox",
-  props: {
-    img: String
-  }
+  name: "NewsBox"
 };
 </script>

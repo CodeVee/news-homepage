@@ -14,15 +14,46 @@ import NewsBox from "./components/NewsBox.vue";
     <main>
       <BannerGrid />
       <div class="grid lg:grid-cols-3 gap-[3.2rem] lg:gap-12 pb-32 lg:pb-48">
-        <NewsBox v-for="news in feed" :key="news.id" :img="news.img">
+        <NewsBox>
+          <template #img>
+            <img class=" w-40 h-[12.7rem]" src="./assets/images/image-retro-pcs.jpg" alt="retro" />
+          </template>
           <template #id>
-            {{news.id}}
+            1
           </template>
           <template #header>
-            {{news.header}}
+            Reviving Retro PCs
           </template>
           <template #sub>
-            {{news.sub}}
+            'What happenss when old PCs are given modern upgrades?'
+          </template>
+        </NewsBox>
+        <NewsBox>
+          <template #img>
+            <img class=" w-40 h-[12.7rem]" src="./assets/images/image-top-laptops.jpg" alt="laptops" />
+          </template>
+          <template #id>
+            2
+          </template>
+          <template #header>
+            Top 10 Laptops of 2022
+          </template>
+          <template #sub>
+            Our best picks for various needs and budgets.
+          </template>
+        </NewsBox>
+        <NewsBox>
+          <template #img>
+            <img class=" w-40 h-[12.7rem]" src="./assets/images/image-gaming-growth.jpg" alt="gaming" />
+          </template>
+          <template #id>
+            3
+          </template>
+          <template #header>
+            The Growth of Gaming
+          </template>
+          <template #sub>
+            How the pandemic has sparked fresh opportunities.
           </template>
         </NewsBox>
       </div>
@@ -49,29 +80,8 @@ export default {
   },
   data() {
     return {
-      feed: [...newsFeed],
       showMenu: false
     }
   }
 };
-const newsFeed = [
-  { 
-    id: 1,
-    img: 'src/assets/images/image-retro-pcs.jpg',
-    header: 'Reviving Retro PCs',
-    sub: 'What happenss when old PCs are given modern upgrades?'
-  },
-  { 
-    id: 2,
-    img: 'src/assets/images/image-top-laptops.jpg',
-    header: 'Top 10 Laptops of 2022',
-    sub: 'Our best picks for various needs and budgets.'
-  },
-  { 
-    id: 3,
-    img: 'src/assets/images/image-gaming-growth.jpg',
-    header: 'The Growth of Gaming',
-    sub: 'How the pandemic has sparked fresh opportunities.'
-  }
-]
 </script>
