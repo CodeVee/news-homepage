@@ -1,6 +1,6 @@
 <template>
     <nav class="flex justify-between items-center pt-11 lg:pt-0">
-        <img class="w-[4.5rem] lg:w-24" src="../assets/images/logo.svg" alt="logo">
+        <img class="w-[4.5rem] lg:w-[6.4rem] lg:h-16" src="../assets/images/logo.svg" alt="logo">
         <button class="lg:hidden" @click="showMenu" >
             <img src="../assets/images/icon-menu.svg" alt="menu">
         </button>

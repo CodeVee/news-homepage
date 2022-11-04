@@ -7,23 +7,23 @@
                 new
             </h2>
             <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">Hydrogen VS Electric Cars</h3>
-            <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
+            <h4 class="font-normal text-[1.5rem] leading-[2.6rem] text-blue-grayish mt-[.8rem]">
                 Will hydrogen-fueled cars ever catch up to EVs?
             </h4>
             <span class="block h-[1px] my-12 bg-blue-grayishdark"></span>
             <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">The Downsides of AI Artistry</h3>
-            <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
+            <h4 class="font-normal text-[1.5rem] leading-[2.6rem] text-blue-grayish mt-[.8rem]">
                 What are the possible adverse effects of on-demand AI image generation?
             </h4>
             <span class="block h-[1px] my-12 bg-blue-grayishdark"></span>
             <h3 class="font-extrabold text-[2rem] text-white-off hover:text-orange-soft cursor-pointer">Is VC Funding Drying Up?</h3>
-            <h4 class="font-normal text-2xl text-blue-grayish mt-[.8rem]">
+            <h4 class="font-normal text-[1.5rem] leading-[2.6rem] text-blue-grayish mt-[.8rem]">
                 Private funding by VC firms is down 50% YOY. We take a look at what that means.
             </h4>
         </div>
         <h1 class="text-blue-vdark font-extrabold text-[4rem] lg:text-[5.6rem] leading-[4rem] lg:leading-[5.6rem] mb-[1.6rem] lg:mb-0">The Bright Future of Web 3.0?</h1>
         <div class="flex flex-col justify-between mb-[6.4rem] lg:mb-0">
-            <p class="text-2xl text-blue-grayishdark font-normal mb-[2.4rem] lg:mb-0">
+            <p class="text-[1.5rem] leading-[2.6rem] text-blue-grayishdark font-normal mb-[2.4rem] lg:mb-0">
                 We dive into the next evolution of the web that claims to put the power of the platforms back 
                 into the hands of the people. But is it really fulfilling its promise?
             </p>
