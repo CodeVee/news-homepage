@@ -6,8 +6,8 @@ import NewsBox from "./components/NewsBox.vue";
 </script>
 
 <template>
-  <div class="wrapper lg:w-[111rem] mx-auto px-[1.6rem] lg:px-0 lg:pt-36 relative">
-    <header class="mb-24">
+  <div class="wrapper lg:w-[111rem] mx-auto px-[1.6rem] lg:px-0 lg:pt-[8.9rem] relative bg-white-off">
+    <header class="mb-[3.2rem] lg:mb-[5.5rem]">
       <NavBar @show="displayMenu"/>
     </header>
 
@@ -19,7 +19,7 @@ import NewsBox from "./components/NewsBox.vue";
             <img class=" w-40 h-[12.7rem]" src="./assets/images/image-retro-pcs.jpg" alt="retro" />
           </template>
           <template #id>
-            1
+            01
           </template>
           <template #header>
             Reviving Retro PCs
@@ -33,7 +33,7 @@ import NewsBox from "./components/NewsBox.vue";
             <img class=" w-40 h-[12.7rem]" src="./assets/images/image-top-laptops.jpg" alt="laptops" />
           </template>
           <template #id>
-            2
+            02
           </template>
           <template #header>
             Top 10 Laptops of 2022
@@ -47,7 +47,7 @@ import NewsBox from "./components/NewsBox.vue";
             <img class=" w-40 h-[12.7rem]" src="./assets/images/image-gaming-growth.jpg" alt="gaming" />
           </template>
           <template #id>
-            3
+            03
           </template>
           <template #header>
             The Growth of Gaming
