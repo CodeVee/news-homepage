@@ -1,7 +1,11 @@
 <template>
-    <nav class="flex justify-between items-center">
-        <img class=" w-24" src="../assets/images/logo.svg" alt="logo">
-        <ul class="flex gap-16">
+    <nav class="flex justify-between items-center mt-20 lg:mt-0">
+        <img class="w-[4.5rem] lg:w-24" src="../assets/images/logo.svg" alt="logo">
+        <button class="lg:hidden" >
+            <img src="src/assets/images/icon-menu.svg" alt="menu">
+        </button>
+        
+        <ul class="lg:flex gap-16 hidden">
             <li><a class="font-normal text-2xl text-blue-grayishdark hover:text-red-soft" href="#">Home</a></li>
             <li><a class="font-normal text-2xl text-blue-grayishdark hover:text-red-soft" href="#">News</a></li>
             <li><a class="font-normal text-2xl text-blue-grayishdark hover:text-red-soft" href="#">Popular</a></li>
