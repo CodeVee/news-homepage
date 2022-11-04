@@ -39,7 +39,3 @@ export default {
     name: 'BannerGrid'
 }
 </script>
-
-<style scoped>
-
-</style>

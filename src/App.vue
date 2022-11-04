@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import BannerGrid from "./components/BannerGrid.vue";
+import MobileNav from "./components/MobileNav.vue";
 import NavBar from "./components/NavBar.vue";
 import NewsBox from "./components/NewsBox.vue";
 </script>
 
 <template>
-  <div class="wrapper lg:w-[111rem] mx-auto px-[1.6rem] lg:px-0 lg:pt-36">
+  <div class="wrapper lg:w-[111rem] mx-auto px-[1.6rem] lg:px-0 lg:pt-36 relative">
     <header class="mb-24">
-      <NavBar />
+      <NavBar @show="displayMenu"/>
     </header>
 
     <main>
       <BannerGrid />
-      <div class="grid lg:grid-cols-3 gap-[3.2rem] lg:gap-12 mb-32 lg:mb-48">
+      <div class="grid lg:grid-cols-3 gap-[3.2rem] lg:gap-12 pb-32 lg:pb-48">
         <NewsBox v-for="news in feed" :key="news.id" :img="news.img">
           <template #id>
             {{news.id}}
@@ -26,14 +27,26 @@ import NewsBox from "./components/NewsBox.vue";
         </NewsBox>
       </div>
     </main>
+    <div v-show="showMenu" class="absolute h-full w-full left-0 top-0">
+      <div class="flex lg:hidden h-full w-full ">
+        <div class="bg-blue-vdark opacity-50 h-full flex-1"></div>
+        <MobileNav @hide="hideMenu"/>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped></style>
-
 <script lang="ts">
 export default {
-  components: { NavBar, BannerGrid, NewsBox },
+  components: { NavBar, BannerGrid, NewsBox, MobileNav },
+  methods: {
+    displayMenu() {
+      this.showMenu = true;
+    },
+    hideMenu() {
+      this.showMenu = false;
+    }
+  },
   data() {
     return {
       feed: [...newsFeed],

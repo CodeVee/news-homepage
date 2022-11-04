@@ -1,7 +1,7 @@
 <template>
-    <nav class="flex justify-between items-center mt-20 lg:mt-0">
+    <nav class="flex justify-between items-center pt-11 lg:pt-0">
         <img class="w-[4.5rem] lg:w-24" src="../assets/images/logo.svg" alt="logo">
-        <button class="lg:hidden" >
+        <button class="lg:hidden" @click="showMenu" >
             <img src="src/assets/images/icon-menu.svg" alt="menu">
         </button>
         
@@ -17,10 +17,12 @@
 
 <script lang="ts">
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    emits: ['show'],
+    methods: {
+        showMenu() {
+            this.$emit('show');
+        }
+    }
 }
 </script>
-
-<style scoped>
-
-</style>
